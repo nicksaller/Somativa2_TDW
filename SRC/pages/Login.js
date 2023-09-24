@@ -10,18 +10,18 @@ function Login() {
     const firebase = require('firebase/app');
 require('firebase/auth');
 
-// Configure o Firebase com as configurações do seu projeto
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'SUA_API_KEY',
-  authDomain: 'SEU_DOMÍNIO.firebaseapp.com',
-  projectId: 'SEU_PROJETO_ID',
-  storageBucket: 'SEU_BUCKET.appspot.com',
-  messagingSenderId: 'SEU_SENDER_ID',
-  appId: 'SEU_APP_ID',
+  apiKey: "AIzaSyD059YmR2bWpIt_eM_E8kQzMATPdCtRNtY",
+  authDomain: "projetotdw-f3e61.firebaseapp.com",
+  projectId: "projetotdw-f3e61",
+  storageBucket: "projetotdw-f3e61.appspot.com",
+  messagingSenderId: "285916136748",
+  appId: "1:285916136748:web:cc09915ff5699dd36d9889"
 };
 
-// Inicialize o Firebase
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 // Função para lidar com o login
 const handleLogin = async (email, senha) => {
